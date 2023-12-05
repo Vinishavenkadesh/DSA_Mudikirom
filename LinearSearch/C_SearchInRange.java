@@ -1,4 +1,4 @@
-package Searching;
+package LinearSearch;
 import java.util.*;
 public class C_SearchInRange {
     public static void main(String[] args) {

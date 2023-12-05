@@ -1,11 +1,15 @@
-package Searching;
+package LinearSearch;
 import java.util.*;
 public class D_MinInArray {
     public static void main(String[] args) {
-        int [] arr = {111,313,554,-65,76,34,55};
+        int [] arr = {};
         minInArray(arr);
     }
     static void minInArray(int [] arr){
+
+        if(arr.length == 0)
+        System.out.println(Integer.MIN_VALUE);
+        else{
         int min = arr[0];
         for(int i : arr){
             if(i<min)
@@ -13,4 +17,5 @@ public class D_MinInArray {
         }
         System.out.println(min);
     }
+}
 }
