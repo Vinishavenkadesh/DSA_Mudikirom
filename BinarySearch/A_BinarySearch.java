@@ -2,7 +2,7 @@ package BinarySearch;
 
 import java.util.*;
 
-public class BinarySearch {
+public class A_BinarySearch {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);

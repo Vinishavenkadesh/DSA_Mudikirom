@@ -2,7 +2,7 @@ package BinarySearch;
 
 import java.util.*;
 
-public class OrderAgnosticBSSame {
+public class B_OrderAgnosticBSSame {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         // int[] arr = { -89, -66, -55, 0, 1, 3, 54, 65, 76, 87, 98 };
