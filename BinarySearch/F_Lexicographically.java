@@ -23,6 +23,7 @@ public class F_Lexicographically {
        }
     //    return arr[start%arr.length]; 
     //    4%4 == 0 => start == arr.length (same)
+    //if start is at index 3 and end is at index 4, in 3%4 it return 3, same way start will be at index 3
     if(start == arr.length)
     return arr[0];
     else
