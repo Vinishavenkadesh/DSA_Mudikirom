@@ -1,4 +1,4 @@
-package BinarySearch;
+package A_BinarySearch;
 
 public class K_RotatedSorted {
     public static void main(String[] args) {
@@ -8,18 +8,16 @@ public class K_RotatedSorted {
         
     }
 
-    public static int search(int [] arr, int target){
+    public static int search(int[] arr, int target) {
         int pivot = pivot(arr);
-        if(target == pivot)
-        return pivot;
-        else if(pivot == -1)
+        if(pivot == -1)
         return binarySearch(arr, target, 0, arr.length - 1);
-        int firstTry = binarySearch(arr, target, 0, pivot-1);
-        if(firstTry!= -1)
-        return firstTry;
+        if(target == arr[pivot])
+        return pivot;
+        if(target >= arr[0])
+        return binarySearch(arr, target, 0, pivot-1);
         else
-        binarySearch(arr, target, pivot+1, arr.length - 1);
-        return -1;
+        return binarySearch(arr, target, pivot+1, arr.length-1);
     }
     
     public static int pivot(int [] arr){
@@ -27,14 +25,14 @@ public class K_RotatedSorted {
         int end = arr.length - 1;
         while(start <= end){
             int mid = start + (end - start)/2;
-            if(end > mid + 1 && arr[mid] > arr[mid+1])
+            if(mid < end && arr[mid]>arr[mid + 1])
             return mid;
-            else if(start < mid - 1 && arr[mid] < arr[mid - 1])
-            return mid - 1;
-            else if(arr[start] > arr[mid])
+            if(start < mid && arr[mid - 1] > arr[mid])
+            return mid;
+            if(arr[start] >= arr[mid])
             end = mid - 1;
             else
-            start = mid + 1; 
+            start = mid + 1;
         }
         return -1;
     }

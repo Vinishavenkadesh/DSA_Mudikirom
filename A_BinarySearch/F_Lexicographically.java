@@ -1,4 +1,4 @@
-package BinarySearch;
+package A_BinarySearch;
 
 public class F_Lexicographically {
     public static void main(String[] args) {

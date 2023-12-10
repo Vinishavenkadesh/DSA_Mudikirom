@@ -1,4 +1,4 @@
-package BinarySearch;
+package A_BinarySearch;
 
 public class J_MountainArray {
     public static void main(String[] args) {

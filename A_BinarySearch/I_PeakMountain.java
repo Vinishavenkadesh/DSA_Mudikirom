@@ -1,4 +1,4 @@
-package BinarySearch;
+package A_BinarySearch;
 
 public class I_PeakMountain {
     public static void main(String[] args) {

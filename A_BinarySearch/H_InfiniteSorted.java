@@ -1,4 +1,4 @@
-package BinarySearch;
+package A_BinarySearch;
 
 public class H_InfiniteSorted {
     public static void main(String[] args) {
